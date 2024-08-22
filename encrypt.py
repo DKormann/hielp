@@ -10,4 +10,3 @@ class Encryption:
     self.decrypt = decrypt
 
 encrypt = Encryption(hashlib.sha256((getpass.getpass("Enter password: ")+'hielp_salt').encode()).hexdigest()[:43]+'=')
-
