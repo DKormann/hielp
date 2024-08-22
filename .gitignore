@@ -1,2 +1,4 @@
 .env.json
 data
+temp
+**/__pycache__/
