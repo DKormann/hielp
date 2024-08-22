@@ -34,7 +34,6 @@ class User:
       model="gpt-4o-mini",
       messages= [{'role':'system', 'content':sysprompt}] + self.hist[-10:]
     ).choices[0].message.content
-    print(f'{resp=}')
     return resp
 
   async def send_assistant_to_user(self, message:str):
